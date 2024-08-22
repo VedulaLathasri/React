@@ -5,13 +5,17 @@ import Welcome from './components/Welcome';
 import Message from './components/Message'
 import Counter from './components/Counter';
 import TrailProps from './components/trailProps';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <TrailProps name ="latha" age="30"/>
+        <ClassClick/>
+        {/* <FunctionClick/> */}
+        {/* <TrailProps name ="latha" age="30"/> */}
         {/* <Counter/> */}
         {/* <Message/> */}
         {/* <Welcome/>
