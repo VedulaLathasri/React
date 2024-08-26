@@ -10,13 +10,16 @@ import ClassClick from './components/ClassClick';
 import ParentComponent from './components/ParentComponent';
 import ConditionalRendering from './components/ConditionalRendering';
 import ListRendering from './ListRendering';
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <ListRendering/>
+
+        <Form/>
+        {/* <ListRendering/> */}
         {/* <ConditionalRendering/> */}
         {/* <ParentComponent/> */}
         {/* <ClassClick/> */}
