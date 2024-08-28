@@ -24,6 +24,7 @@ class LifecycleA extends Component {
 
     getSnapshotBeforeUpdate(prevProps, prevState) {
       console.log('LifecycleA getSnapshotBeforeUpdate');
+      return null;
     }
 
     componentDidUpdate() {
@@ -33,14 +34,22 @@ class LifecycleA extends Component {
     componentDidMount(){
         console.log('LifecycleA componentDidMount ');
     }
+
+    changeState = () =>{
+      this.setState({
+        name:'Code Done!!'
+      })
+    }
+
     render() {
         console.log('LifecycleA render method');
-    return (
-      <div>
-        <LifecycleB/>
-        <div>LifecycleA</div>
-      </div>
-    )
+        return (
+          <div>
+            <div>LifecycleA</div>
+            <button onClick={this.changeState}>Change state</button>
+            <LifecycleB/>
+          </div>
+        )
   }
 }
 
