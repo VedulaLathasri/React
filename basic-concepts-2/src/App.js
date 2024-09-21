@@ -8,11 +8,16 @@ import FocusInput from './components/RefsWithClassComp/FocusInput';
 import PortalDemo from './components/Portals/PortalDemo';
 import Hero from './components/Error boundaries/Hero';
 import ErrorBoundary from './components/Error boundaries/ErrorBoundary';
+import ComponentC from './components/Context/ComponentC';
+import { UserProvider } from './components/Context/userContext';
 
 function App() {
-  return (
+  return (  
     <div className="App">
-      <ErrorBoundary>
+      <UserProvider value = "Vishwas">
+        <ComponentC/>
+      </UserProvider>
+      {/* <ErrorBoundary>
           <Hero heroName="Batman"></Hero>
       </ErrorBoundary>
       <ErrorBoundary>
@@ -20,7 +25,7 @@ function App() {
       </ErrorBoundary>
       <ErrorBoundary>
           <Hero heroName="Joker"></Hero>
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       {/* <PortalDemo/> */}
       {/* <FocusInput/> */}
       {/* <RefsDemo/> */}
