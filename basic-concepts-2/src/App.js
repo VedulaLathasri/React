@@ -23,17 +23,17 @@ function App() {
       <UserProvider value = "Vishwas">
         <ComponentC/>
       </UserProvider>
-    {/*
-      <RPCounter>
+    
+      {/* <RPCounter>
         { (count, incrementCount) =>
         // render = { (count, incrementCount) => // render is the normal naming convention, if we dont use this, we need to access as this.props.children in the Components.
           <ClickCounter count = {count} incrementCount ={incrementCount}/>}
       </RPCounter>
-      <RPCounter>*/}
-        {/* // render = { (count, incrementCount) => */}
-//         { (count, incrementCount) =>
-//           <HoverCounter count={count} incrementCount={incrementCount}/>}
-//       </RPCounter>
+      <RPCounter>
+         { (count, incrementCount) =>
+         //render = { (count, incrementCount) =>
+           <HoverCounter count={count} incrementCount={incrementCount}/>}
+       </RPCounter> */}
       {/* <User render ={(isLoggedIn)=> isLoggedIn? "Vishwas" : "Guest"}/> */}
 
 
