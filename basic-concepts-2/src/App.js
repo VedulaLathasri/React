@@ -20,9 +20,9 @@ import { UserProvider } from './components/Context/userContext';
 function App() {
   return (  
     <div className="App">
-      <UserProvider value = "Vishwas">
+      {/* <UserProvider value = "Vishwas">
         <ComponentC/>
-      </UserProvider>
+      </UserProvider> */}
     
       {/* <RPCounter>
         { (count, incrementCount) =>
